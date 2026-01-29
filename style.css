@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Bungee&display=swap');
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    text-align: center;
+    background: linear-gradient(to right, #0b95ea, #15d3c3);
 }
 
 #tentacles {
@@ -11,7 +14,8 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    font-family: 'Bitcount Single';
+    background-color: rgb(2, 94, 125);
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -20,16 +24,25 @@ body {
 }
 
 .stats-container {
-    display: flex;
+    font-family: "Bungee";
+    display: flex; 
+    align-items: center; 
+    cursor: pointer;
+    
+}
+
+.stats-container:hover {
+    box-shadow: "0 0 30px lightblue"
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background: linear-gradient(to left, #ffFFFF, #f3f5ca);
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
     width: 100%;
     text-align: center;
+    animate: pulse,
 }
 
 #num-contributions, #total-raised, #num-games {
@@ -49,7 +62,7 @@ body {
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    background: radial-gradient(circle, #FFFFFF, #15d3c3);
     padding: 1%;
     margin: 1%;
     width: 300px;
@@ -59,7 +72,7 @@ body {
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 50px lightblue;
 }
 
 #button-container {
@@ -67,9 +80,36 @@ body {
 }
 
 button {
-    font-family: 'Cabin';
+    background-color: #c45fec;
+    font-family: 'Bitcount Single';
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+.button-heading {
+    
+    text-align: center;
+    font-family: 'Cabin';
+}
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+#game-search {
+    padding: 10px 15px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#game-search:focus {
+    border-color: #000000;
+    
 }
