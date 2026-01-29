@@ -85,7 +85,7 @@ const contributionsCard = document.getElementById("num-contributions");
 
     const contributions = document.createElement("div");
 
-    contributions.classList.add("stats-card");
+    // contributions.classList.add("stats-card"); // redundant and unnecessary 
 
     const totalContributions = contrs.reduce( (sum, contr) => {
         return sum + contr.backers;
@@ -116,7 +116,7 @@ const raisedCard = document.getElementById("total-raised");
     function addRaisedToPage(raisedmoney){
     
     const raised = document.createElement("div");
-    raised.classList.add("stats-card")
+    //  
 
     const totalRaised = raisedmoney.reduce( (sum, r) => {
         return sum + r.pledged; 
@@ -150,7 +150,7 @@ const gamesCard = document.getElementById("num-games");
     function addNumGamesToPage(numGames){
     
     const games = document.createElement("div");
-    games.classList.add("stats-card")
+    // games.classList.add("stats-card")
 
     const totalNumGames = numGames.reduce( (sum, game) => {
         return sum + 1; 
@@ -277,8 +277,8 @@ const descriptionContainer = document.getElementById("description-container");
 
 
 // create a string that explains the number of unfunded games using the ternary operator
-    const unfundedString = `A total of $${totalContributions} has been raised for ${totalNumGames} games. Currently, 
-    ${numUnfunded} ${numUnfunded == 1 ? "game remains" : "games remain"} unfunded. We need your help to fund these amazing games!`
+    const unfundedString = `A total of <b><em>$${totalContributions}</em></b> has been raised for ${totalNumGames} games. Currently, 
+    <b><em>${numUnfunded}</b></em> ${numUnfunded == 1 ? "game remains" : "games remain"} unfunded. <em>We need <b><u>your</u></b> help to fund these amazing games!</em>`
 
 // create a new DOM element containing the template string and append it to the description container
     const desc = document.createElement("p");
