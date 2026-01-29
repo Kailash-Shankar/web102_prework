@@ -1,32 +1,40 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Sea Monster Crowdfunding Website*
 
-Submitted by: **Your Name Here**
+Submitted by: **Kailash Shankar**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [X] The introduction section explains the background of the company and how many games remain unfunded.
+* [X] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [X] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [X] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] A search bar that allows for keyword search for specific games
+* [X] New and improved fonts, background gradients, and other CSS styling giving a more flashy look to the website.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<div>
+    <a href="https://www.loom.com/share/1ddba15509c943c4ac2e5e7670ec05ff">
+      <p>Sea Monster Walkthrough - Kailash Shankar - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/1ddba15509c943c4ac2e5e7670ec05ff">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1ddba15509c943c4ac2e5e7670ec05ff-781d8d6851024470-full-play.gif#t=0.1">
+    </a>
+  </div>
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with Loom  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -34,12 +42,15 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The main challenge for me in this project was learning the traditional JavaScript syntax and using HTML/CSS directly. The little experience I have with JS is through React and Tailwind CSS, where
+everything is handled through hooks and <em>className</em> attributes inside the tags, which is a lot more straightforward and intuitive than defining CSS styles for components, writing the HTML
+for the frontend UI structure, and implementing the logic and data retrieval all in separate files. Using the DOM to edit display data was also a new, challenging experience for me. But it was a
+lot of fun and I feel I learned a lot from it.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
-
+    Copyright 2026 Kailash Shankar
+    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
